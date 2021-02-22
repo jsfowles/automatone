@@ -1,0 +1,25 @@
+#__next {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.js-shadow-display {
+    text-shadow: 2px -2px 12px #FFFFFF, 3px -3px 20px black;
+}
+
+.js-shadow-body {
+text-shadow: 10px 10px 25px rgba(0, 0, 0, 0.77);
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+img {
+    filter: drop-shadow(15px 5px 15px rgba(0, 0, 0, 0.50))
+}

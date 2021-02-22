@@ -1,13 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyles = createGlobalStyle`  
-
-  #__next {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-
+export const GlobalStyles = createGlobalStyle`
   html {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -16,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
 
   html, body, #__next {
     height: 100%;
+    width: 100%;
   }
 
   * {
@@ -38,7 +32,7 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Cabin', sans-serif;
     vertical-align: baseline;
   }
 
@@ -48,6 +42,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
     flex: 1 0 auto;
   }
 
@@ -62,7 +60,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    font-family: sans-serif;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -86,7 +83,7 @@ export const GlobalStyles = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
-  
+
   .no-scroll {
     overflow: hidden;
   }

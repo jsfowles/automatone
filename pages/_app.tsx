@@ -1,14 +1,17 @@
 import React from 'react';
-import { ThemeProvider } from 'belly-ui/identity';
-import * as theme from '@theme';
+
 import { AppProps } from 'next/app';
+import Layout from '@components/Layout';
+import 'tailwindcss/tailwind.css';
+import '@theme/styles.css';
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    // @ts-ignore
-    <ThemeProvider theme={theme} vars={theme.vars}>
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </>
   );
 };
 

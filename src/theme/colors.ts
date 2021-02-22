@@ -1,9 +1,6 @@
 export const colors = {
-  red: 'red',
-  blue: 'blue',
-  yellow: 'yellow',
-  white: 'white',
-  black: 'black',
+  white: '#FDFFF8',
+  black: '#2C363F',
 };
 
 export type ColorType = typeof colors;
